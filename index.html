@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team 15</title>
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/200082900?s=400&u=5e3113de2e5d211620b62f8ee823226aa5ed468c&v=4">
+    <meta property="og:title" content="Team 15">
+    <meta property="og:description" content="Site Oficial do Team 15">
+    <meta property="og:url" content="https://hostt15.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="header-links">
+        <img src="header-logo.jpg" href="home" alt="Logo" class="header-logo">
+        <a href="#about" class="nav-link">Quem Somos</a>
+        <a href="#news" class="nav-link">Noticias</a>
+        <a href="#contact" class="nav-link">Contate-nos</a>
+    </div>
+</header>
+<main>
+    <section id="home">
+        <h2>Redes Sociais</h2>
+        <div class="topics">
+            <div id="youtube">
+                <button onclick="location.href='https://www.youtube.com/@GDKAYKY'"><i class="fab fa-youtube"></i> YouTube</button>
+                <p>📌 O que você encontra aqui?</p>
+                <p>Backpus de Lives do Newman</p>
+            </div>
+
+            <div id="telegram">
+                <button onclick="location.href='https://www.t.me/+wvbU5mZnppFiYWYx'"><i class="fab fa-telegram"></i> Telegram</button>
+                <p>📌 O que você encontra aqui?</p>
+                <p>Notícias,Avisos importantes, Backups, e <strong>Conteudos Exclusivos</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="contact-section">
+            <h2>Quem Somos?</h2>
+            <p>Somos um <strong>grupo de fãs do Newman</strong> que buscam <strong>Preservar, Arquivar e Catalogar</strong> os Conteudos do Newman</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="contact-section">
+            <h2>Apoie a nossa iniciativa</h2>
+            <h3>Chave PIX</h3>
+            <div class="pix"
+            <div class="pix-container">
+                <div class="pix-logo-container">
+                    <img src="pix-logo.svg" alt="Pix Logo" width="40">
+                </div>
+                <input class="pixbox" type="text" id="pix-key" value="28bf268f-7e76-4ac4-ae7e-0a819b3f2d0c" readonly>
+                <button class="pixbtn" onclick="copyPixKey()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                        <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/>
+                    </svg>
+                </button></svg></button>
+            </div>
+        </div>  
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Fale Conosco</h2>
+        <div class="contact-section">
+            <p>Se você tem alguma duvida ou sugestão sinta-se livre para nos contatar</p>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:hostt15@tuta.io" style="color: #c4c4c4;">hostt15@tuta.io</a></p>
+        </div>
+    </section>
+
+    </div>
+</main>
+<footer>
+    <p>&copy; 2025 Website</p>
+</footer>
+<script src="scripts.js" defer></script>
+<script>
+function copyPixKey() {
+    var copyText = document.getElementById("pix-key");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    document.execCommand("copy");
+    alert("Chave PIX copiada: " + copyText.value);
+}
+</script>
+</body>
+</html>
